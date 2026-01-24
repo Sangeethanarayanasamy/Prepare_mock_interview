@@ -1,0 +1,47 @@
+
+a sure I'm having 10. 
+Okay. I have 10 years of experience as an SDET. I'm currently working with UPS as a senior performance automation engineer, but I'll also be taking care about functional regression smoke and parity executions. So I have been doing UI API automations. So for UI, I have extensively worked with Selenium, WebDriver test, Ng, cucumber and also Cypress. Playwright. I have also worked on API validations with rest assured and postman. I have created workflows and collections and even framework as well. And for the framework level, I have used hybrid framework with UI and API embedded together and page object model with the data driven majorly. And for CICD, I have used Jenkins. I also worked on AWS and Azure DevOps as well. And for performance testing, I have been using J meter, load runner in my projects. So I have done performance validations for both the web and also the web services as well. For test management, I have been extensively using zeta and Zephyr plugin along with ALM in the recent project. I've been using MAV and get in my projects as well. So we are following agile with the two weeks print implementation. So starting from grooming, planning sessions, retrospectives and stand ups, I would be involved in each phase, and I take care about all the end to end test validation. I write the test cases, do the test validation and rise defects. 
+So that's at a high level. 
+It's close to nine years. 
+Nine years except my first project, I have been working on automation 
+eight years. 
+The online compiler. You mean? I 
+Okay, any string is fine, Right? 
+Okay, so, oh, 
+you don't take controls, I'm losing the controls if you take 
+so first I have created the string, and then I'm just creating a reverse variable and assigning it to null, and I'm creating a for loop. Explain, please. 
+So in the for loop based on the length I want to iterate, 
+on, then the reversed variable I would be assigning it to the reverse and then With the string at the character at I index i 
+Yeah, It is done. You. 
+Can you come again? Thread safe pattern along with singleton class example You mean, 
+okay, so Singleton is where We define a class so that we will be creating the class only once as per the requirement, and we would be defining the implementation of the pattern when it is needed. So that means we are doing like earlier initialization of the method of creating the singleton class. So object will be only created when it is loaded in the memory of JVM. So basically, for example, if there is any static block that I need to define with an instance to be created, so that we can take as a real time example for singleton pattern implementation and for thread safe implementation, 
+the singleton pattern you mean? 
+Yeah, so singleton pattern we would be using in order to ensure thread safety and also to maintain the object is only created within the method whenever it is called, not like by default, it is created so we no need to implement the get instance method. It will be accessed directly within the 
+class variable that we are creating, 
+yeah, so for the thread safety, right? So even singleton pattern provides the thread safety implementation, so in even in a multi threaded environment, so if we use a singleton class as it is thread safe, we can use it synchronized and access the variables when it is required, so multiple threads cannot access it simultaneously. So 
+close to seven years at the moment, 
+we use a chaining in that case, where we first, you are repeating First, we create the variable whatever is required. For example, there is a POST call. So from a POST call we would be creating a customer ID. So that customer ID I would be storing as a global constant, and I do the chaining to the second API call, the second endpoint, and this global variable, I would be calling it in the successive call that I am making through the get or put, whatever it is. So by the chaining of APIs, we can do the multiple calls, and we can even create a collection if we are using a postman. 
+So if it is happening only in parallel execution, then first we need to check either it is because of calling the same variable, that means that is not thread safe, so we can isolate the calls so that each and every API call that we are making is getting the test data as it is required, and if it is using the same user ID or same parameter that is called by the other then test data isolation. Also we can do so if you are getting like 409 which is conflict or bad request with the error message. So based on that, we need to modify the test data or the variables accordingly. And if it is due to the authentication token which is shared between the calls, and the token is getting expired in that case, so we need to regenerate the token per thread that it is creating. So in that case, we would not be getting the token expiry issues as well. 
+Okay, we use data driven testing, even for the APIs as well. So we have the JSON JSON calls that are created with the JSON payload. So this JSON payload, we would be calling it based on the environment. So we have not hard coded any data in the payload as well. So the payload remains parameterized and based on the environment. I would be picking this test data from the files that I am passing. So it would go to the corresponding json file based on the environment, and it would do the execution. 
+Nine years i 
+So on top of selenium weights, we can write a customized weight where we can specify a condition on the element that we are waiting for. So, for example, even in our project, I have created a method like a click and wait for spinner to disappear. So this method would perform the click operation and wait until the page load spinner is disappeared. So it's a conditional wait that I have written so that we would not get no such element exception. So similarly, we can write based on custom conditions. 
+Yes, 
+you are able to see the notepad. Ask him. 
+So for example, you 
+so so if I have to wait based on a condition along with the time limit, 
+I would define a fluent weight with custom timeout. 
+So here I'm asking it to ignore no such element exception. 
+So when I'm calling this web element, for example, there is a submit button. So I would say, like, wait until and I would specify this condition and by calling the web element, so whatever is the strategy, so for example, the ID, 
+so here asking that 
+action to wait until that particular timeout. So similarly, we can also add custom weights based on the conditional statements also. So for example, there is a spinner that is displayed once we perform an operation, so that performing operation so we can make it adjusted accordingly based on the condition 
+have the concept. Of the time limit that we are specifying, it if it is not meeting the expected time limit and it is exceeding beyond the time that we are specified, so in that case, it would Fail. 
+Yes, I have used Jenkins and Azure as well. 
+Yeah, 
+okay, yes, yes. 
+So basically, the major reason that why it would fail in the pipeline is because of the environment differences, because local machine is something where we have the control on and everything is known, like the hardware specifications, software specifications, is known, and in Jenkins agent, as we would be running it on VMs or the servers, so there would be difference in time zone, the file paths and even the OS that we are running. So we need to check from the Jenkins console what exactly is the reason for it that it is failing. So from the console output, we would be able to see the exact reason, and from that if it is because of element not found. So we need to check whether like the element, whatever we are trying to click on, is that weight is sufficient, or we need to increase the weight, because there would be environmental and system wide like differences, also in the time that we need to wait. So we need to check and align them with the local and if it is due to date time mismatch, then we need to, instead of using hard weights, hard coded time, we can specify the system time. So it would pick the VM time and then execute and if it is something due to proxy issues on the VM or on the SSL certificate issues. So first we need to fix those issues on the VM configuration, and then we need to rerun next 
+thing. Fine. 
+Yeah, that's what I was trying to explain. So from the console, we would be understanding why exactly it failed, right? So we can take a screenshot at the time of failure, or we can also take a video reference once the failure is there, so we can analyze and compare it with the local run. So that's what we even do here. So for the flaky failures, right? So if it is due to timeout exception or due to element not visible exception, we can add weighted times or implicit explicit weights, or free end weights, custom weights, if it is needed. And then if it is due to parallel execution problems, then we need to identify that unique data and remove the dependencies. And if it is due to environment specific issues, like DB issues or internal APIs which are not exposed to the VM, then we need to whitelist this Jenkins, AP, IP in the VM side so we would be able to access that. 
+Majorly, want to know about the role. Also, what are the tools that are used, and anything in specific with the API or UI that you want to let Me know, 
+ask about next steps, sir, 
+won't ask all that Sangeetha, you can grab the call you. 
+call. 
