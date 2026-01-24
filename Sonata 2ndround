@@ -1,0 +1,78 @@
+You Uh, sure. So I have total 10 years of experience, and I'm currently working as a senior SDT. I worked on different domains with different tools and technologies. My recent project is with UPS, so here I'm working both on functional validation and on performance as well. So for the tools for UI automation, I'm using Selenium WebDriver with the test ng cucumber. I also worked on playwright Cypress as well. And for the tools for CICD, I have been using Jenkins and also Azure. I worked on MAV and GitLab AND gate as well. So for the cloud, I have been using AWS and Azure. I worked on Kubernetes and Docker components also, to an extent. So currently, we are following agile implementation with two weeks print period. So whatever are the apex user stories that are assigned to me. I would be working on functional validation and do the automation and based on the story, whether it is UI or API, so I would be doing the automation respectively, for the API's I worked on RESTful services most of the time. I worked on rest assured for the automation and postman for manual validations. I also have worked on Tasker to an extent, for the ETL validations and all. And I have been using Zra 
+plugin for the test management. 
+And I have worked on ALM also, so I have good experience working with frameworks, building utilities. 
+I have exposure with it. It's only in one of the project, 
+yes, man, yeah for the test management. 
+First is the stand up call that we would be Yeah. 
+So in the stand up, we discuss on the progress for the particular sprint that we are working on. From the QA side, I would be updating what all I have done. And apart from that, as we follow Scrum. So we have retrospective meetings, review meetings at the end of the sprint and grooming planning sessions at the starting, 
+like every 
+at the end of the sprint. 
+Yeah, so we discuss on what 
+I would say a beginning of the sprint. 
+So what went well, what needs to be improved, and what can be like, implemented in a different way, like any new ideas as such, and if we have any problems. So how we can retrospect and plan it better for the upcoming sprints? So all these we discuss, 
+individual contributor 
+I follow basically 
+yeah, so coming to the first part of the question, so how to finalize the regression candidates? So I would follow three criteria. The first criteria is any like reusable or retestable implementations, so which has to be tested multiple times across multiple OS or multiple environments for every build? So I consider that as the first criteria, and the second criteria, whichever involves a lot of test data to validate, which takes like lot of time to validate manually and is error prone. I would consider that as well. And the third criteria, any complex workflows which involves end to end validation and multiple components testing which takes time for manual so I would also consider that for automation. So and for the second part of the question, at what stages we need to perform regression? So it is better to perform regression after code changes or bug fixes have happened, so once the build is stable, so we trigger the regression suit. So typically, here we are doing it once in every sprint, so that we are checking at the end of the sprint that the new implementations haven't impacted the existing functionality. So that's the second part. So 
+yes, Yeah, 
+yes for the release processes. 
+You okay, I 
+Oh, can I write in the shot? 
+Sure, so basically, page object model is where we separate the web elements from the implementation methods. So these locators, or the elements that we are locating, we would be maintaining an object repository which can be reused and easily maintainable because we are not injecting directly it into the methods. So we keep everything together, and we define those web element classes with the class names, so it is easy to understand which like element strategy belongs to which class and as the tests are separate, right? So these test scripts interact with the application solely through the methods that we are providing from the page objects. So instead of making direct calls to the element locators, so this improves the maintenance aspect, and code reusability would be there, and code readability is more the As the code is more structured. So 
+yeah, okay, so, 
+let me know if you are able to see the screen. I 
+So shall I start from the page class definition, or just the Yeah. 
+So then we can define the locators here. 
+Similarly I would do for the password as well. We can write x, path or ID, name, whichever is constant. 
+I'm just taking random values 
+so we can define individual methods so to make it reusable 
+for the actions that we are performing, like public. 
+So here I am defining user. I it. 
+So generally, this username we would be passing from the Excel files instead of hard coding here. So we read from the Excel file, and then we enter the values, And I use test ng data provider for that. I 
+so as this is a click action, we Do not need any keys to be sent. 
+Yes, 
+yeah, 
+so, yeah, so from the strategy, like locator strategy side, I would use access specifiers instead of like using a dynamic component, like ID which keeps on changing, or a path which keeps on changing, I would try to use following sibling, preceding sibling, whatever is constant from that particular DOM structure. So I would use it and if it is having particular text which can be constant, then I would use like, starts with or contains text, and I would use explicit weight. So in that case, I would write a condition like visibility of element located by or Elementor to be clickable, and then perform the action. And if the like, we are getting any stale element reference exception as such, because the time that we are clicking, it is not attached to the element. So I try to use the custom weights and then use refresh action. So these are the different ways. So 
+yes, 
+okay, I 
+Okay, I 
+so basically 
+show in the current project. Also when I joined, we used to have the similar implementation, so even if I use ID or different XPath strategies, still I used to see like 20% of the scripts keep on failing. So we have discussed the same with the dev team and the crosspot teams, and we have come to a conclusion or a common point where we can introduce data Test ID. So this data Test ID is unique for each element, so it is like an ID, but will remain constant. So that's the best approach, because it is not only reducing the time of maintenance, but also for the developers as well, they are able to quickly, like Find solutions at certain levels. 
+So that's the best one. 
+Yes, so if that is happening different instances, we can use a fluent weight and write a Java wrapper class. So this wrapper class would identify the element whenever 
+the fluent weight or it 
+uh for 
+fluent weight, or which one I 
+Okay? So? 
+So if it is a simple JavaScript alert, right? So then I would use driver dot switch, and then switch to that particular alert, whatever alert path that we have identified. And then, once we do that, then I can use like alert, dot dismiss 
+alert, dot accept 
+like this. But if it is a new browser, happen new our new browser, so we need to switch to that window handle and then perform action on the new window that we have switched to. 
+Yes, we have been using the same so we run the test with the dependencies groups and with the different browsers using test NG. And even in test Ng, we are using data provider 
+for handling the data you 
+No, that's implemented by me. I have written the code 
+for the data provider, right? 
+Yeah, so data provider we like we define at the class level. 
+So for example, in above scenario, as we need to get the login data, I would define it like this, 
+and then I create the object array, 
+like get data to Read the data, 
+where it will return object array. I 
+with key value pairs so 
+and at the test level, we would be calling this data provider. So it will go to that login data method that we have created, and it will supply this code to our login test, 
+and then whatever action. So for example, if I'm calling this login page right so it will read the username, password from this data provider, and then it will perform at 
+I have done both automation and manual. 
+For automation, I used rest assured for manual, I worked on postman. 
+Yes, 
+I'm getting resound. 
+Yeah, so 400 series is for client side errors, like 400 is bad request and we get 4403, for forbidden, 401 for unauthorized and all. So whenever we do not have access or permissions or authentication, so we get these. 500 is for server side errors, like internal server error. 
+We get server side issues, then we get 500 series. 
+200 is for success responses, 
+internal server error per 102, 
+yeah, 404 not found. We get, 
+we get a bad request. 
+Bad request or 404 not not found, two. 
+So we use a JSON parser. So the 
+Yes, so we use JSON parser, so we create the JSON path object, and then from the JSON path we convert it to the string format, extract that particular string that we want to assert from the UI and do the matcher statements or assertions by fetching The value from the DB or from the UI. So 
+yes. So even we are following the same Yeah, same approach data we are passing it through the JSON files from the payload that whatever we are creating, and we also use the CSV files as well, and generally for whatever key value pairs or environment variables we maintain it that the project level itself in The repository. So 
+yeah, It is UBS I 
+in 2024, I started working there, and From then I was converting, 
+yeah, so It's a power supply system Project. So 
+yeah, Sure you 
