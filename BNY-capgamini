@@ -20,7 +20,7 @@ If they ask again:
 I typecast the WebDriver to JavaScriptExecutor and execute JavaScript directly on the element, for example clicking or scrolling into view.
 This helps in handling complex UI behaviors that WebDriver alone cannot handle.”
 
-3️⃣ Window & Frame Handling (clean answer)
+3️⃣ Window & Frame Handling (clean answer).
 
 “For multiple windows, I use getWindowHandles() to capture all window IDs and switch to the required window using driver.switchTo().window(windowId).
 
