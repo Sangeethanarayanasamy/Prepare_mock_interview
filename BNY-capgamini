@@ -18,7 +18,7 @@ If they ask again:
 
 “When normal Selenium click doesn’t work due to overlays or DOM issues, I use JavaScriptExecutor.
 I typecast the WebDriver to JavaScriptExecutor and execute JavaScript directly on the element, for example clicking or scrolling into view.
-This helps in handling complex UI behaviors that WebDriver alone cannot handle.”
+This helps in handling complex UI behaviors that WebDriver alone cannot handle.”..
 
 3️⃣ Window & Frame Handling (clean answer).
 
