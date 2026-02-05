@@ -1,0 +1,89 @@
+1️⃣ Clean & STRONG Introduction (use this verbatim)
+
+**“Hi, I’m Sangeetha. I have around 10 years of experience as a QA Engineer, working across both manual and automation testing. I started with manual testing and gradually moved into full-stack automation.
+
+On the manual side, I’ve worked extensively on API testing using Postman, test case management using ALM, and defect and story tracking using JIRA, following Agile methodologies.
+
+On the automation side, I have strong experience in web, API, and mobile automation. I’ve automated web applications using Selenium WebDriver, Cypress, and Playwright; API automation using Rest Assured with Java; and I’ve also worked on JavaScript-based API automation.
+
+I’ve designed and built automation frameworks using both BDD and TDD approaches, primarily with Cucumber and TestNG.
+
+In my current project at UPS, I work on an AI-driven decision-making system, where I contribute on the QA side by validating web, API, and AI-based workflows using Cypress, Playwright, Selenium, and Rest Assured.”**
+
+This alone already sounds senior-level.
+
+2️⃣ JavaScriptExecutor (clean answer)
+
+If they ask again:
+
+“When normal Selenium click doesn’t work due to overlays or DOM issues, I use JavaScriptExecutor.
+I typecast the WebDriver to JavaScriptExecutor and execute JavaScript directly on the element, for example clicking or scrolling into view.
+This helps in handling complex UI behaviors that WebDriver alone cannot handle.”
+
+3️⃣ Window & Frame Handling (clean answer)
+
+“For multiple windows, I use getWindowHandles() to capture all window IDs and switch to the required window using driver.switchTo().window(windowId).
+
+For frames, I switch sequentially — first to the parent frame and then to the child frame using driver.switchTo().frame(). After interacting with elements, I switch back to the default content.”
+
+4️⃣ Stale Element Exception (very good answer – keep this)
+
+“Stale element exception occurs when the DOM refreshes and the previously located element is no longer valid.
+To fix this, I re-locate the element after the page refresh instead of using the old reference.”
+
+✔️ This answer is 100% correct.
+
+5️⃣ Explicit vs Implicit Wait (perfect answer, just shorter)
+
+“Implicit wait is a global wait applied to all WebDriver actions.
+Explicit wait is more flexible — it allows waiting for a specific condition for a specific element.
+I prefer explicit waits because they give better control and reduce unnecessary delays.”
+
+6️⃣ API Chaining (clean & confident)
+
+“API chaining is when the output of one API is used as input for another API.
+For example, I first call a login API to get an authentication token, then pass that token to another API to fetch or update resources.
+This is commonly used in microservices where APIs are independent but logically connected.”
+
+7️⃣ Mocking (this was GOOD, just refine)
+
+“We use mocking tools like Mockoon to simulate external services.
+Mockoon allows us to create mock APIs with predefined responses, either through UI or Docker.
+This helps us test our services independently without relying on real external systems.”
+
+8️⃣ AI / LLM Project at UPS (this is your BIG strength)
+
+“At UPS, we work on an AI-driven decision-making system backed by Amazon Bedrock.
+The system uses multiple LLMs and an agentic architecture to make decisions based on customer and operational data.
+
+On the QA side, I focus on validating AI workflows, API integrations, data accuracy, and response quality rather than model training.”
+
+9️⃣ LangChain (high-level is PERFECT for QA)
+
+“LangChain is an open-source framework used to build LLM-based applications and agentic workflows.
+It allows integration with different LLMs like OpenAI, Gemini, and LLaMA through a common SDK.
+I have a high-level understanding of how it’s used in agent-based systems, mainly from a QA and validation perspective.”
+
+⚠️ Do NOT go deeper unless asked. This is exactly right for QA.
+
+🔟 AI Model Validation Metrics (this was excellent)
+
+“The metrics depend on the model type.
+For classification models, we look at accuracy, precision, recall, and F1 score.
+For regression models, we evaluate metrics like ROC, Mean Squared Error, and error rates.”
+
+1️⃣1️⃣ LLM Evaluation (this answer impressed them)
+
+“We evaluate LLMs using golden datasets and predefined prompts.
+We compare the model’s responses against expected outputs and measure accuracy using threshold-based validation.
+In our project, we maintain a 90% accuracy threshold before promoting a model to production.”
+
+🔥 This is very strong.
+
+1️⃣2️⃣ Coding Confidence (IMPROVE THIS LINE)
+
+Instead of “7 out of 10”, say:
+
+“I’m very comfortable writing automation scripts in Java and JavaScript, and I continuously improve my coding skills as frameworks and tools evolve.”
+
+Much better 💯
