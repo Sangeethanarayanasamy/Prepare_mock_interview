@@ -1,3 +1,81 @@
+
+1️⃣ AI Agent / LLM tooling (high-level only)
+
+They were happy with your QA role explanation, but they want you to strengthen vocabulary + flow, not implementation.
+
+👉 Brush up on:
+
+Agentic AI basics
+
+What is an AI agent
+
+Tools + memory + planner (just concepts)
+
+LangChain components
+
+Chains
+
+Agents
+
+Tools
+
+Prompt templates
+
+How LLMs are plugged into apps (not trained)
+
+💡 They do NOT expect you to code LangChain — only explain how it fits in the system.
+
+2️⃣ LLM testing & evaluation terminology
+
+You already know this — they want it more structured and confident.
+
+Brush up keywords:
+
+Golden dataset
+
+Prompt regression
+
+Hallucination testing
+
+Bias testing
+
+Response consistency
+
+Threshold-based validation
+
+Offline vs online evaluation
+
+👉 You already spoke about golden prompts + 90% threshold — that was good. Just tighten it.
+
+3️⃣ Metrics clarity (minor polish)
+
+You mixed a couple of terms (very common, no issue).
+
+Brush up clearly:
+
+Classification: Accuracy, Precision, Recall, F1
+
+Regression: MSE, RMSE, MAE
+
+LLM eval: Human eval + automated scoring (pass/fail, similarity, thresholds)
+
+They weren’t testing math — just clarity.
+
+4️⃣ Mocking tools naming (small thing)
+
+You explained mocking well, but:
+
+Be consistent with tool name (Mockoon)
+
+Know why mocking is used in microservices
+
+One clean line is enough:
+
+“We use Mockoon to mock external dependencies so testing is isolated and stable.”
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 1️⃣ Clean & STRONG Introduction (use this verbatim)
 
 **“Hi, I’m Sangeetha. I have around 10 years of experience as a QA Engineer, working across both manual and automation testing. I started with manual testing and gradually moved into full-stack automation.
