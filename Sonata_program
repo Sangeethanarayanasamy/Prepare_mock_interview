@@ -1,3 +1,11 @@
+
+Wait<WebDriver> wait=new FluentWait<>(Driver)
+.withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(20).ignoring(NoSuchElementException.ass);
+WebElement submit=wait.until(driver->driver.findElement(by.id("submit")));
+submit.click();
+
+
+................................................................
 public class LoginPage{
 WebDriver driver;
 
