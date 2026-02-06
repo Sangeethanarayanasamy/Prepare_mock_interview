@@ -1,1 +1,11 @@
+((JavaScriptExecutor)driver).executeScript("aruguments[0].click", webelement)
+
+List<String> lsAllWindows = driver.getAllWindowHandles()
+
+driver.switchTo().window("")
+
+driver.switchTo().frame("frame1")
+driver.switchTo().frame("frame2_inside_frame1")
+driver.findElement(By.id("frame2_element_id")).click();
+
 
