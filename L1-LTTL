@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+import java.util.stream.IntStream;
+
+class Main {
+    public static void main(String[] args) {
+        int[] result = IntStream.rangeClosed(0,50)
+        .filter(Main::isPrime)
+        .filter(n->n%2!=0)
+        .map(n->n-1)
+        .toArray();
+        
+       System.out.println(Arrays.toString(result));
+    }
+       private static boolean isPrime(int number){
+           if(number<=1) return false;
+           return IntStream.rangeClosed(2,(int)Math.sqrt(number))
+           .allMatch(n->number%n!=0);
+       
+    }
+}
