@@ -1,1 +1,283 @@
+1. Tell me about yourself and your experience
 
+Q: Can you briefly introduce yourself?
+
+A:
+I have around 10 years of experience as a Senior QA Automation Engineer. I’ve worked extensively on manual and automation testing across Functional, System Integration (SIT), and UAT phases.
+My expertise includes UI, API, backend, and mobile automation, primarily in banking, retail, and healthcare domains. Currently, I work on sprint automation, regression, and CI/CD-driven testing, ensuring quality across UI, API, and backend layers.
+
+2. What automation tools and languages have you worked with?
+
+Q: Which tools and programming languages do you use?
+
+A:
+
+UI Automation: Selenium (Java), Cypress & Playwright (JavaScript)
+
+API Automation: REST Assured, Postman (manual API testing)
+
+Mobile Automation: Appium (Android & iOS – native and hybrid apps)
+
+Test Frameworks: TestNG
+
+Build & Version Control: Maven, Git
+
+CI/CD: Jenkins
+
+Backend Validation: SQL, Kafka, MongoDB, PostgreSQL
+
+3. What is your role in the current project?
+
+Q: What do you handle day-to-day in your current project?
+
+A:
+I work on in-sprint automation and maintenance. For assigned user stories, I:
+
+Perform functional, integration, UI, and API validations
+
+Execute sanity and regression test suites
+
+Maintain automation scripts
+
+Analyze test reports and raise defects
+
+Coordinate testing activities through test management tools like Zephyr, ALM, and ADO plugins
+
+4. Explain your Jenkins CI/CD pipeline setup
+
+Q: How have you implemented CI/CD using Jenkins?
+
+A:
+I integrated Git with Jenkins, where Jenkins:
+
+Pulls the latest code from the repository
+
+Performs Maven clean & test
+
+Deploys the build to the QA environment
+
+Triggers downstream jobs for API and UI sanity tests
+
+The pipeline is written using Groovy, with stages like:
+
+Checkout
+
+Build
+
+Test
+
+Report generation
+
+I also configured CRON schedules for nightly runs and email notifications with execution reports.
+
+5. Is the Jenkins execution manual or automated?
+
+Q: Do you trigger Jenkins jobs manually?
+
+A:
+No, it’s fully automated.
+Executions are triggered either:
+
+On latest code push, or
+
+Via scheduled CRON jobs for nightly sanity and regression runs.
+
+6. Difference between Selenium and Appium
+
+Q: What is the difference between Selenium and Appium?
+
+A:
+
+Selenium is used for web application automation using browser drivers.
+
+Appium is used for mobile automation (Android & iOS) and supports native, hybrid, and mobile web apps.
+
+Appium uses the JSON Wire Protocol / W3C protocol to interact with mobile devices.
+
+7. Have you worked on parallel execution?
+
+Q: Have you implemented parallel execution?
+
+A:
+Yes.
+
+For web automation, I used Selenium Grid with TestNG
+
+For mobile automation, I used BrowserStack, configuring multiple devices to run tests in parallel.
+
+8. How do you install the same APK on multiple devices?
+
+Q: How do you install an APK across multiple Android devices?
+
+A:
+We use ADB with a Bash script:
+
+Fetch connected devices using adb devices
+
+Loop through each device
+
+Install APK using adb -s <deviceId> install <apk>
+
+This ensures the same APK is installed across all configured devices automatically.
+
+9. Explain locator strategies in Appium
+
+Q: What locator strategies do you prefer in mobile automation?
+
+A:
+Priority order:
+
+Accessibility ID (most stable)
+
+Resource ID (Android-specific)
+
+XPath (last resort due to performance and flakiness)
+
+For dynamic IDs, I use contains() or conditional waits.
+
+10. How do you handle app crashes during installation (Android)?
+
+Q: What do you do if an app crashes during installation?
+
+A:
+I collect:
+
+ADB install logs
+
+Logcat crash logs
+
+Device details and APK build info
+
+I start log capture before installation and stop after the crash to provide precise logs for root cause analysis.
+
+11. How do you handle iOS app crashes?
+
+Q: How do you collect crash logs for iOS?
+
+A:
+
+Use Xcode → View Device Logs
+
+Export .crash files
+
+Capture Xcode console logs
+
+Use Mac Console.app for system-level logs
+For automation failures, I also check Appium server logs and WebDriverAgent logs.
+
+12. How do you handle flaky tests?
+
+Q: How do you manage flaky test cases?
+
+A:
+
+Implemented TestNG retry analyzer
+
+Re-run only failed test cases
+
+Generate final reports after retries
+
+Tag consistently failing tests as flaky
+
+Exclude them from blocking pipelines and run separately
+
+13. How do you analyze test failures?
+
+Q: What is your failure analysis approach?
+
+A:
+I analyze:
+
+Logs and exception messages
+
+Environment differences (VM vs local)
+
+Wait conditions and synchronization
+
+Locator stability
+
+Test data conflicts in parallel execution
+
+Based on root cause, I apply:
+
+Explicit waits
+
+Improved locators
+
+Data isolation
+
+Mocking unstable services
+
+14. How do you handle pop-ups and permissions in mobile automation?
+
+Q: How do you handle mobile pop-ups and ads?
+
+A:
+
+Enable autoGrantPermissions
+
+Disable notifications via ADB shell commands
+
+Handle alerts using Appium capabilities
+
+Suppress system pop-ups like Bluetooth, location, and ads
+
+15. Experience with Appium 1.x to 2.x migration
+
+Q: Have you worked on Appium migration?
+
+A:
+Yes.
+During Appium 1.x → 2.x migration:
+
+Centralized driver creation using Driver Factory
+
+Moved capabilities to a base class
+
+Avoided hardcoding
+
+Made framework version-safe and scalable
+
+16. What proxy tools have you used?
+
+Q: Have you used Charles or Fiddler?
+
+A:
+Yes.
+
+Charles Proxy is my primary tool for HTTP/HTTPS traffic inspection
+
+I use Fiddler mainly for BrowserStack or Windows-specific debugging
+
+Charles is preferred for banking and mobile app testing
+
+17. How do you handle alerts and multiple windows in Selenium?
+
+Q: How do you handle alerts and window switching?
+
+A:
+
+Use switchTo().alert().accept() for alerts
+
+Store parent window handle
+
+Switch using getWindowHandles()
+
+Perform actions and switch back to parent
+
+Use JavaScriptExecutor for scrolling when needed
+
+18. How do you validate API responses?
+
+Q: How do you validate APIs?
+
+A:
+
+Validate HTTP response codes (200, 400, 500)
+
+Assert response body using REST Assured
+
+Perform negative testing for error scenarios
+
+Integrate API tests into Jenkins pipelines
+..............................................................................................................
