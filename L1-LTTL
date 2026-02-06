@@ -20,3 +20,53 @@ class Main {
        
     }
 }
+..................................................................................................................................
+public class VerifyBrokenLink{
+public static void main(String[] args) throws Exception{
+WebDriver driver=new ChromeDriver();
+driver.manage().window().maximize();
+
+driver.get("https://test.com/login");
+
+driver.findElement(By.id("username")).sendKeys("userabc"));
+driver.findElement(By.id("password")).sendKeys("passwordabc"));
+driver.findElement(By.id("loginBtn")).click();
+
+Alert alert=driver.switchTo().alert();
+alert.accept();
+
+Select flighDropDown=new Select(driver.findElement(By.id("flight")));
+flighDropDown.selectByVisibleText("New York");
+Select time=new Select(driver.findElement(By.id("time")));
+time.selectByVisibleText("00:00 AM");
+
+driver.findElement(By.id("OK")).click();
+
+String parentWindow=driver.getWindowHandle();
+Set<String> allWindows=driver.getWindowHandles();
+Iterator<String> it=allWindows.iterator();
+while(it.hasNext()){
+String childWindow=it.Next();
+if(!childWindow.equals(parentWindow)){
+driver.switchTo().window(childWindow);
+driver.findElemt(By.id("OK")).click();
+driver.close();
+}}
+driver.swichTo().wondow(parentWindow);
+
+JavaScriptExecutor js=(JavaScriptExecutor)driver;
+js.executeScript("window.scrollBy(0,document.body.scrollHeight))");
+WebEleemnt contactUs=driver.findElemnt(By.linkText("Contact Us"));
+String linkUrl=cintactUs.getAttribute("href"));
+
+verifyBrokenLink(linkUrl);
+driver.quit();
+public static void verifyBrokenLink(String linkUrl){
+try{
+URL url=new URL(linkRul);
+HttpUrlConnection http=(HttpUrlConnection) url.openConnection();
+http.connect()o;
+if(http.getResponseCode()>=400){
+System.out.println("linkUrl is broken");
+}catch(Excpetion e)}
+
