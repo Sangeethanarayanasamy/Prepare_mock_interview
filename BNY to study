@@ -36,3 +36,57 @@ This is very likely what they meant by:
 
 “LLM initiated system”
 ..................................................................................................................................................
+LLM Evaluation / AI Assistance Systems
+
+What they meant by:
+
+“LLM initiated system assistance center”
+
+This usually refers to:
+
+AI assistants
+
+AI agents
+
+Decision-support systems
+
+Study:
+
+How AI assistant workflows work
+
+Input → Retrieval → LLM → Response
+
+Validation of responses
+..................................................................................................................................................
+Prompt Evaluation / AI Testing Framework Concepts
+
+This matches what you said about:
+
+Golden prompts
+
+Threshold (90%)
+
+Evaluation
+
+Study:
+
+Prompt testing
+
+Response consistency
+
+Hallucination testing
+
+Regression testing for prompts
+...................................................................................................................................
+
+
+
+
+
+
+
+
+
+
+
+
