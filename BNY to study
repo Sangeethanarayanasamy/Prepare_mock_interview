@@ -17,5 +17,22 @@ You DO NOT need coding depth — only architecture understanding.
 👉 Learn:
 
 How an LLM calls tools or retrieves data.
-...........................................................................
+............................................................................................................................................
+RAG (Retrieval Augmented Generation)
 
+This matches your UPS explanation about pulling data from Snowflake.
+
+Study:
+
+What is RAG
+
+Retrieval → Context → LLM response
+
+Why RAG reduces hallucination
+
+How QA validates retrieval correctness
+
+This is very likely what they meant by:
+
+“LLM initiated system”
+..................................................................................................................................................
