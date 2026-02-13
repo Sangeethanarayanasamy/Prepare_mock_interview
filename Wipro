@@ -18,3 +18,8 @@ public class HelloWorld
         Console.WriteLine ("the output is: "+result.Trim());
     }
 }
+
+Ans:
+The output is: This Is An Interview
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
