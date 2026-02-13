@@ -1,1 +1,20 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+//this is an interview
+using System;
 
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        string input = "this is an interview";
+        string[] words = input.Split(' ');
+        string result = "";
+        foreach (string word in words)
+        {
+            result += char.ToUpper(word[0])+word.Substring(1)+" ";
+            
+        }
+        Console.WriteLine ("the output is: "+result.Trim());
+    }
+}
