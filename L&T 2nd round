@@ -1,1 +1,255 @@
+1️⃣ What is your current mobile automation setup?
 
+Q: What is your current automation setup?
+
+A:
+Currently, we are using Appium 1.22 with Java client (Java 8) integrated with TestNG.
+We execute tests on real Android devices and Android emulators, and the execution is managed through Selenium Grid for distributed runs.
+
+2️⃣ How many test cases did you automate in UPS mobile project?
+
+Q: What was your automation coverage in UPS mobile project?
+
+A:
+In the UPS mobile project, we automated around 180–200 end-to-end test cases.
+The coverage included:
+
+Login flow
+
+Shipment tracking
+
+Push notifications
+
+Payment flow
+
+Profile update
+
+Negative scenarios
+
+Out of these, around 150 test cases were part of regression suite.
+
+3️⃣ How do you execute your regression suite?
+
+Q: How do you execute your test cases locally and in CI?
+
+A:
+
+🔹 Locally:
+
+Test cases are grouped under regression.xml (TestNG suite file)
+
+Executed using Maven command:
+
+mvn clean test
+
+
+Pass the regression XML file for execution.
+
+🔹 In Jenkins:
+
+Jenkins pulls code from Git
+
+Builds using Maven
+
+Starts the Appium server automatically
+
+Connects to real devices or emulators
+
+Executes suite in parallel based on device configuration
+
+Generates Extent Reports
+
+Jenkins displays pass/fail summary
+
+4️⃣ Which ports are used in iOS automation?
+
+Q: What ports are used in iOS Appium automation?
+
+A:
+
+By default, Appium runs on port 4723
+
+Internally, for iOS automation, WebDriverAgent runs on port 8100 on the device or simulator.
+
+5️⃣ How do you identify mobile elements?
+
+Q: How do you locate elements in mobile automation?
+
+A:
+We use Appium Inspector:
+
+Connect real device or emulator
+
+Start Appium server
+
+Launch app
+
+Start session with desired capabilities
+
+Inspect elements
+
+We capture properties like:
+
+Resource ID
+
+Accessibility ID
+
+Content description
+
+Class name
+
+XPath (if necessary)
+
+6️⃣ Have you executed tests on multiple devices in parallel?
+
+Q: How do you handle parallel execution?
+
+A:
+Yes, in UPS project we executed:
+
+2 Android devices
+
+1 iOS simulator
+
+We configured:
+
+Unique device names
+
+Unique systemPort values (e.g., 8200, 8201) to avoid conflicts
+
+Parameterized device config in testng.xml
+
+Enabled parallel execution in TestNG
+
+7️⃣ What major issue did you face in UPS mobile project?
+
+Q: What was a major challenge and how did you fix it?
+
+A:
+We faced session disconnection during long regression runs.
+
+After ~40–50 test cases:
+
+Appium session terminated
+
+Remaining tests failed
+
+Root Cause:
+
+Device going to idle state
+
+ADB losing connection
+
+Fix:
+
+Used ADB command:
+
+adb shell svc power stayon true
+
+
+Increased newCommandTimeout
+
+Replaced hard waits with optimized wait handling
+
+8️⃣ How did you get the app builds?
+
+Q: Did you download the app from Play Store/App Store?
+
+A:
+No. The dev team generated internal builds from CI pipeline.
+
+🔹 Android:
+
+Signed APK shared via Artifactory or SharePoint
+
+Installed using adb install
+
+🔹 iOS:
+
+.ipa file shared via internal distribution portal
+
+Installed via Xcode with provisioning profile
+
+9️⃣ How do you install apps manually?
+
+Q: How do you install APK/IPA files?
+
+A:
+
+🔹 Android:
+adb devices
+adb install app.apk
+adb install -r app.apk  (replace existing build)
+
+🔹 iOS Simulator:
+xcrun simctl install booted app.app
+
+🔹 Real iOS Device:
+
+Installed using Xcode
+
+Or using iDevice installer (if configured)
+
+🔟 How do you manage different environments?
+
+Q: How do you switch between Dev, QA, and UAT?
+
+A:
+The base URL is not hardcoded.
+
+The app uses environment-specific config files:
+
+dev_config.json
+
+qa_config.json
+
+We install the build generated for that environment.
+
+For specific API validations, we use Charles Proxy to:
+
+Rewrite endpoints
+
+Redirect traffic
+
+Modify headers
+
+Simulate error responses
+
+1️⃣1️⃣ Which proxy tool do you use?
+
+Q: What proxy tools have you used?
+
+A:
+We use Charles Proxy primarily.
+
+Steps:
+
+Configure device proxy settings
+
+Route traffic through Charles
+
+Monitor request/response
+
+Rewrite APIs
+
+Simulate negative scenarios
+
+1️⃣2️⃣ What iOS version did you work on?
+
+Q: Which iOS version did you automate?
+
+A:
+We worked on iOS 14.2 for automation.
+
+1️⃣3️⃣ What would you ask at the end of interview?
+
+Q: Do you have any questions for us?
+
+A:
+Yes, I would like to understand:
+
+What will be the next round?
+
+Will it be technical or managerial?
+
+Is there any hands-on or client interaction round?
