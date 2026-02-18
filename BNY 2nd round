@@ -1,1 +1,414 @@
+1️⃣ Tell me about yourself.
 
+Q: Can you introduce yourself?
+
+A:
+I have around 10 years of experience in QA Automation across multiple domains including retail and banking.
+Currently, I’m working with UPS as a Senior Automation Tester, where I handle both functional validation and automation within sprint cycles.
+I work on regression, smoke, sanity testing and automate feasible scenarios during sprint execution.
+
+2️⃣ What tools and technologies have you used?
+
+Q: What tools have you worked with?
+
+A:
+
+UI Automation:
+
+Selenium WebDriver (Java)
+
+TestNG
+
+Cucumber (BDD)
+
+Cypress
+
+Playwright
+
+API Testing:
+
+REST Assured
+
+Postman (manual validation)
+
+Karate framework
+
+CI/CD:
+
+Jenkins
+
+Azure DevOps
+
+Cloud:
+
+AWS
+
+Performance Testing:
+
+JMeter
+
+LoadRunner
+
+Backend Validation:
+
+SQL
+
+Test Management:
+
+ALM
+
+Zephyr plugins
+
+3️⃣ What methodology do you follow?
+
+Q: What SDLC methodology are you using?
+
+A:
+Currently following Agile with 2-week sprints.
+I have also worked with Waterfall and Kanban models.
+
+4️⃣ What is your role in sprint?
+
+Q: What do you do in a sprint?
+
+A:
+
+Functionally validate assigned user stories
+
+Raise and retest defects
+
+Execute regression and sanity
+
+Automate feasible UI/API scenarios
+
+Maintain automation scripts
+
+5️⃣ Tell me about your team.
+
+Q: What is your team structure?
+
+A:
+The QA team consists of 3 members:
+
+I work as a Senior Automation Engineer
+
+Two associate-level members focus primarily on functional testing
+
+6️⃣ Do you work with offshore teams?
+
+Q: Have you worked in onsite-offshore model?
+
+A:
+Yes.
+In previous projects including PNC Bank, I collaborated with offshore teams in India for:
+
+Data dependency resolution
+
+Cross-code integration
+
+End-to-end validation
+
+📌 Domain Experience
+7️⃣ Tell me about UPS domain.
+
+Q: What does UPS application support?
+
+A:
+UPS application supports:
+
+Pack & Ship
+
+Store locator
+
+Printing & mailbox services
+
+Notary services
+
+Payment processing
+
+It’s a retail-based system with multiple modules and internal ERP integration.
+
+8️⃣ Tell me about your banking experience.
+
+Q: What was your role in PNC Bank?
+
+A:
+I worked on:
+
+Online banking
+
+Consumer & retail banking
+
+Core banking system
+
+Account management (checking, savings, loans)
+
+Transaction management (deposit, transfer, bill payments)
+
+Mortgage systems
+
+9️⃣ How do you test payment functionality?
+
+Q: How do you test credit card payment scenario?
+
+A:
+
+Positive Testing:
+
+Validate successful payment
+
+Check confirmation screen
+
+Verify SMS/email notification
+
+Negative Testing:
+
+Insufficient funds
+
+Transaction timeout
+
+Network interruption
+
+Session timeout
+
+We use mock services for controlled payment simulation.
+
+🔟 How do you simulate network delays?
+
+Q: How do you test latency and timeout?
+
+A:
+
+Use Network Link Conditioner (Mac)
+
+Configure server-side API response delays
+
+Adjust database timeout settings
+
+Validate UI behavior under delayed responses
+
+📌 Core Java & OOP Concepts
+1️⃣1️⃣ Explain OOP concepts in automation.
+
+Q: Explain OOP in Selenium framework.
+
+A:
+
+Abstraction:
+
+Using interfaces like:
+
+WebDriver driver = new ChromeDriver();
+
+Encapsulation:
+
+Using Page Object Model to combine elements and methods.
+
+Inheritance:
+
+Using base class for browser setup and extending in child classes.
+
+Polymorphism:
+
+Method overloading
+
+Method overriding
+
+1️⃣2️⃣ Difference between String, StringBuffer, StringBuilder?
+
+A:
+
+Feature	String	StringBuffer	StringBuilder
+Mutable	No	Yes	Yes
+Thread Safe	Yes	Yes	No
+Performance	Slow	Moderate	Fast
+
+Use:
+
+StringBuilder for single-thread frequent modification
+
+StringBuffer for multi-threaded environment
+
+1️⃣3️⃣ Abstract class vs Interface?
+
+A:
+
+Abstract Class	Interface
+Can have abstract & non-abstract methods	Only abstract methods (until Java 8 default methods)
+Uses extends	Uses implements
+Can have variables with access modifiers	Variables are public static final
+Cannot instantiate	Cannot instantiate
+1️⃣4️⃣ Explain String comparison output.
+
+Q: What is difference between == and .equals()?
+
+A:
+
+== compares memory reference
+
+.equals() compares values
+
+If string literal → same pool → == true
+If created with new → different object → == false
+
+1️⃣5️⃣ How to reverse a string?
+
+A:
+Convert string to char array → swap left & right pointers → return new string.
+
+📌 Collections Framework
+1️⃣6️⃣ List vs Set vs Map?
+
+A:
+
+Collection	Duplicates	Order Maintained
+List	Yes	Yes
+Set	No	No
+Map	Key-Value	No
+
+LinkedHashSet maintains insertion order.
+
+1️⃣7️⃣ ArrayList vs LinkedList?
+
+A:
+
+ArrayList → Faster for retrieval
+
+LinkedList → Better for insertion & deletion
+
+📌 Exception Handling
+1️⃣8️⃣ Checked vs Unchecked Exception?
+
+A:
+
+Checked → Compile time (must handle)
+
+Unchecked → Runtime
+
+1️⃣9️⃣ throw vs throws?
+
+A:
+
+throw → Used inside method
+
+throws → Declared in method signature
+
+📌 Synchronization & Selenium
+2️⃣0️⃣ What is Stale Element Exception?
+
+A:
+Occurs when DOM changes and element reference becomes invalid.
+Fix: Refresh page or re-locate element.
+
+2️⃣1️⃣ findElement vs findElements?
+
+A:
+
+findElement → returns first match / throws exception
+
+findElements → returns list / empty list if not found
+
+2️⃣2️⃣ Explicit Wait vs Fluent Wait?
+
+A:
+
+Explicit Wait:
+
+Wait until specific condition (clickable, visible)
+
+Fluent Wait:
+
+Custom polling interval
+
+Ignore specific exceptions
+
+📌 Cucumber & Framework
+2️⃣3️⃣ Explain Cucumber structure.
+
+A:
+
+Structure:
+
+Base class (browser setup)
+
+Pages (POM)
+
+Modules (flow-based grouping)
+
+Feature files
+
+Step definitions
+
+Runner class
+
+Utilities
+
+Data folder (Excel / Properties)
+
+2️⃣4️⃣ Scenario vs Scenario Outline?
+
+A:
+
+Scenario → Single data execution
+
+Scenario Outline → Multiple data sets using Examples table
+
+2️⃣5️⃣ How do you pass data?
+
+A:
+
+Using TestNG DataProvider (Excel/CSV)
+
+Using Scenario Outline Examples
+
+Using JDBC for DB validation
+
+📌 Jenkins Execution
+2️⃣6️⃣ How do you execute from Jenkins?
+
+A:
+
+Freestyle project
+
+Pull from Git
+
+Tag-based execution (smoke/sanity/regression)
+
+Scheduled daily run
+
+Controlled from TestNG XML
+
+📌 SQL Question
+2️⃣7️⃣ Write SQL query for salary ≥ 6500 in QE department.
+
+A:
+
+SELECT *
+FROM employee e
+JOIN department d
+ON e.dept_id = d.dept_id
+WHERE e.salary >= 6500
+AND d.department_name = 'QE';
+
+🎯 Final Assessment of This Round
+
+This round tested:
+
+Core Java
+
+Selenium
+
+Cucumber
+
+Collections
+
+Exception handling
+
+SQL
+
+Framework architecture
+
+Domain knowledge
+
+You covered almost everything.
+..................................................................................................
