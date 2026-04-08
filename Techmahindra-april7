@@ -1,1 +1,172 @@
 
+Q1: Can you introduce yourself?
+
+Answer:
+
+I have 10+ years of experience in QA automation, working across UI, API, and mobile automation in different domains.
+
+Currently, I am working with UPS as a Senior Automation Engineer, where I primarily handle UI and mobile automation, and also API testing based on user story requirements.
+
+I have experience with Selenium WebDriver using Java, TestNG, and Cucumber. I have also worked on Playwright and Cypress using JavaScript.
+
+For mobile automation, I use Appium for both Android and iOS on real devices and BrowserStack.
+
+In CI/CD, I use Jenkins and Azure DevOps along with Maven and Git.
+
+We follow Agile methodology with a two-week sprint, where I work on functional validation, regression, smoke, sanity testing, and framework maintenance.
+
+For test management and bug tracking, I use Zephyr.
+
+Q2: What is your role in the team?
+
+Answer:
+
+I work as an individual contributor in automation.
+
+In my team, I handle automation, while two other QA members focus on manual validation.
+
+Q3: Explain your automation framework.
+
+Answer:
+
+We use Selenium WebDriver with BDD implementation.
+
+The framework is based on Page Object Model and data-driven approach for UI, API, and mobile automation.
+
+We write feature files with scenarios and scenario outlines, and implement step definitions accordingly.
+
+We follow OOP concepts like abstraction, inheritance, and interfaces to ensure reusability and avoid duplication.
+
+Web elements are separated into page classes for clean maintenance.
+
+For mobile automation, we use Appium with Java and TestNG, where test layers, page object layers, and utility layers are defined.
+
+We also use APIs for data setup to reduce execution time, making it a hybrid framework.
+
+Q4: How do you handle test data?
+
+Answer:
+
+We use TestNG DataProvider to read data from Excel files.
+
+The Excel sheets are read based on environment and requirements, and the data is passed to scripts as object arrays during execution.
+
+Another approach is using JDBC, where we connect to the database, execute queries, fetch expected data, and compare it with UI values.
+
+Q5: What reporting tools do you use?
+
+Answer:
+
+We use Extent Reports and TestNG reports customized using ITestListener.
+
+The reports include pass, fail, skipped counts, along with exceptions.
+
+Jenkins sends execution reports via email using post-build actions.
+
+Q6: How do you evaluate execution results?
+
+Answer:
+
+We check:
+
+Pass, fail, skipped count
+Exception details
+Execution progress
+
+We ensure pass percentage is above 85% and no P1 defects exist.
+
+Defects should be minimal and non-critical before proceeding further.
+
+Q7: How do you run tests in parallel?
+
+Answer:
+
+We use TestNG suite XML configuration with parallel execution.
+
+We define thread count and execution type (methods, tests, or suite).
+
+Jenkins is also configured to run tests across multiple nodes or VM servers.
+
+I have also worked with Selenium Grid using hub and node configuration.
+
+Q8: How do you decide which test cases to automate?
+
+Answer:
+
+I consider:
+
+Stable features that don’t change frequently
+Complex workflows with multiple validations
+Business-critical scenarios that are important for every release
+Q9: How do you validate API responses?
+
+Answer:
+
+I validate the JSON response body, ensuring required fields like user ID and mandatory fields are present.
+
+I also verify that input payload values are correctly returned in the response.
+
+Additionally, I test negative scenarios such as invalid inputs, null values, and missing mandatory fields, along with schema validation.
+
+Q10: How do you handle flaky tests?
+
+Answer:
+
+First, I check the exception from logs to identify the issue.
+
+If it is a locator issue, I improve the XPath or locator strategy.
+
+If it is a browser or environment issue, I check configurations.
+
+If needed, I add retry logic for a few attempts before marking the test as failed.
+
+Q11: What performance testing metrics do you monitor?
+
+Answer:
+
+I monitor:
+
+Throughput
+Response time (average and maximum)
+95th and 99th percentile
+Transactions per second
+Error rate
+Concurrent users
+
+I also monitor CPU usage using tools like Grafana and CloudWatch.
+
+Q12: Write Selenium code for login.
+
+Answer:
+
+I would use WebDriver to launch the browser, enter username and password using element locators, and click login.
+
+Then I would validate success using either a message or page title and perform assertions.
+
+For negative scenarios, I would test invalid credentials and empty inputs.
+
+In real projects, credentials are read securely from Excel or property files.
+
+Q13: How do you read data from Excel?
+
+Answer:
+
+We use Apache POI libraries.
+
+We iterate through rows and columns, extract cell values, store them in an object array, and pass them through DataProvider.
+
+Q14: Why do you use static methods?
+
+Answer:
+
+Static methods allow us to call methods directly using the class name without creating an object.
+
+This simplifies utility method usage across the framework.
+
+Q15: What is @AfterMethod?
+
+Answer:
+
+@AfterMethod is used to execute cleanup actions after each test, such as closing the browser or ending the session.
+
+This ensures a fresh environment for the next test execution.
