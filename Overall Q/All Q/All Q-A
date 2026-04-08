@@ -1,0 +1,120 @@
+(COMPLETE LIST)
+🔹 INTRO / GENERAL
+Can you introduce yourself?
+🔹 MICROSERVICES / API / SYSTEM DESIGN
+Explain your current project and microservices testing.
+Can you explain how services communicate?
+How do you validate microservices?
+How do you handle integration testing?
+How do you ensure data consistency?
+What tools are you using for API testing?
+How do you validate request and response?
+What validations do you perform on APIs?
+What is contract testing?
+How do you ensure APIs do not break?
+🔹 FAILOVER / RESILIENCY
+How do you handle error handling?
+How do you test failover scenarios?
+How do you identify APIs, databases and message brokers?
+What services do you consider critical?
+How do you validate Kafka messages?
+🔹 CHAOS / FAILURE TESTING
+How do you simulate failures?
+How do you test network latency?
+How do you test database down scenarios?
+What is RTO and RPO?
+How do you test recovery scenarios?
+What tools do you use for chaos testing?
+What is Chaos Monkey?
+🔹 SECURITY TESTING
+How do you test authentication?
+How do you test authorization?
+How do you validate role-based access?
+How do you test token validation?
+How do you test expired tokens?
+How do you test unauthorized access?
+How do you validate input protection?
+How do you test SQL injection?
+How do you prevent data exposure?
+What is replay attack testing?
+🔹 UI + API HYBRID
+How do you combine UI and API testing?
+What type of framework do you use?
+Have you used keyword-driven frameworks?
+🔹 SELENIUM / UI QUESTIONS
+What is force click?
+Why should we not use force click?
+How do you handle elements not interactable?
+How do you handle synchronization issues?
+What wait do you use?
+How do you wait for elements?
+🔹 TOOL COMPARISON
+When do you choose Selenium over Cypress?
+Why is Cypress faster?
+Which tool do you prefer and why?
+🔹 FLAKY TESTS
+What are flaky tests?
+Why do flaky tests occur?
+🔹 AI TESTING
+How are you using AI tools?
+Which AI tools are you using?
+How do you use ChatGPT or Copilot in testing?
+What challenges do you face using AI?
+🔹 CI/CD
+What CI/CD tools are you using?
+How do you integrate Jenkins with Git?
+How do you configure pipelines?
+How do you execute tests in pipeline?
+How do you select environments?
+🔹 FRAMEWORK DESIGN
+How do you design a framework from scratch?
+How do you structure your framework?
+What components do you create first?
+How do you ensure reusability?
+When do you reuse vs build from scratch?
+🔹 MOBILE TESTING (APPIUM)
+Explain iOS automation process.
+What tools do you use for iOS automation?
+How do you set up environment (Xcode etc)?
+What are desired capabilities?
+How do you start Appium session?
+How do you identify mobile elements?
+How do you run tests on multiple devices?
+Simulator vs real device?
+🔹 OOPS
+What OOP concepts have you used?
+How do you use encapsulation in framework?
+How do you use inheritance?
+What is polymorphism?
+What is abstraction?
+🔹 JAVA / FRAMEWORK
+Explain method overloading.
+Explain method overriding.
+How do you use utility methods?
+🔹 DESIGN PATTERN
+What is Page Object Model?
+What is Page Factory?
+Difference between POM and Page Factory?
+🔹 SELENIUM CORE
+What is WebDriver?
+What is ChromeDriver?
+Difference between WebDriver and ChromeDriver?
+What is upcasting?
+🔹 LOCATORS / DYNAMIC ELEMENTS
+How do you handle dynamic tables?
+How do you handle pagination?
+How do you find elements in table?
+Why avoid dynamic IDs?
+🔹 SELENIUM METHODS
+Difference between findElement and findElements?
+🔹 ACTIONS
+How do you perform mouse actions?
+🔹 DROPDOWN
+How do you handle dropdown?
+How do you print alternate values?
+🔹 APPIUM / SERVER
+What is WD/hub?
+🔹 SQL
+How do you write SQL queries?
+What is subquery?
+What is DISTINCT?
