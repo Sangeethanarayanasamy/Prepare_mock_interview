@@ -1,0 +1,150 @@
+Q1: Can you introduce yourself?
+
+Answer:
+
+Hi, my name is Sangeeta. I'm a senior QA automation engineer with over 10 years of experience in software testing, automation and quality engineering.
+
+I have almost six years of automation and four years of manual testing experience.
+
+Throughout my career, I have specialized in designing and implementing end to end automation framework using tools such as selenium, WebDriver, playwright, Cypress and rest assured, primarily leveraging Java and TypeScript.
+
+I have strong experience in building robust CICD pipelines using Jenkins, GitHub actions and Azure DevOps.
+
+My expertise extends beyond UI automation into AI testing, performance testing and back end validation.
+
+I also worked on rest and soap services using the tools like postman soap UI and JMeter to validate the system performance, scalability and reliability under load.
+
+I also worked on both Android and iOS platform using Appium as a part of the mobile automation and also worked on cross device compatibility and stability.
+
+Q2: Explain your iOS automation process.
+
+Answer:
+
+As a part of the iOS platform, if it's an app testing, we have end to end testing, where we validated the entire user journey, including the UI interactions, back end, AI communication, data validation and integration with services.
+
+The core tools what we have used for iOS automation is Appium.
+
+As a part of the architecture, we have environment setup where we installed Xcode which is iOS SDK and configure the device, then provision the profiles.
+
+Then we have defined the test environments with platform name, device name, platform version, app and automation name.
+
+Then we launched the app and start the session where we created a session using Appium, installed app and launched the app on the device.
+
+Then we identified the UI elements where we look at elements like accessibility ID.
+
+Then we automated the user journey which is end to end like login flow and navigation.
+
+As a part of AI validation, we validated AI responses using Rest Assured and Postman collection where we cross check the UI data with the backend DB.
+
+Then we have assertion validation.
+
+Then we did the CICD integration using Jenkins where we run nightly regression and parallel execution for multiple devices.
+
+We use simulator for regression and real device for critical workflows.
+
+Q3: Explain OOP concepts used in automation.
+
+Answer:
+
+I have used encapsulation for wrapping the data and methods together.
+
+I used in page object model where I encapsulated locators and actions inside the page classes to improve reusability and hide implementation details from test classes.
+
+Then I used inheritance where child class inherits properties from parent class like base test or base page.
+
+I also used polymorphism for method overloading and overriding mainly to design flexible utility methods and allow different implementations for browser and platforms like iOS and Android.
+
+I also use abstraction mainly to hide complex implementation like browser setup, API calls and database connections and expose only reusable methods.
+
+Q4: Explain method overloading and overriding.
+
+Answer:
+
+I used method overloading in reusable utility classes.
+
+For example, I created click method that accepts either locator or web element making framework flexible and reducing duplicate code.
+
+I also used send keys and wait methods.
+
+I used method overriding in base classes to customize driver setup for different platforms like web, Android and iOS.
+
+Q5: What is Page Object Model and Page Factory?
+
+Answer:
+
+Page Object Model is a design pattern where each web or mobile page is one class and it contains locators and methods.
+
+Page Factory is an enhanced version of Page Object Model provided by selenium which uses find by annotations and lazy initialization.
+
+Q6: How do you handle dynamic tables?
+
+Answer:
+
+Instead of relying on dynamic IDs and static row index, we use relative XPath or CSS.
+
+We loop through rows and handle pagination and break when found.
+
+First identify table structure using stable locator.
+
+Then loop through rows.
+
+If not found handle pagination by clicking next page.
+
+Target specific column for accuracy instead of full row text.
+
+Handle dynamic loading using explicit wait.
+
+Q7: What is WebDriver vs ChromeDriver?
+
+Answer:
+
+WebDriver is an interface which defines actions that can be performed on browser.
+
+ChromeDriver is a class which implements WebDriver and executes commands on Chrome browser.
+
+WebDriver driver = new ChromeDriver is upcasting where parent reference to child object.
+
+Direct ChromeDriver reference is not flexible and not framework friendly.
+
+Q8: Difference between findElement and findElements.
+
+Answer:
+
+findElement returns single element and throws exception if not found.
+
+findElements returns list of elements and returns empty list if not found without exception.
+
+Q9: How do you perform mouse actions?
+
+Answer:
+
+We use Actions class.
+
+Create Actions object and perform mouse hover or other actions.
+
+Q10: How do you handle dropdown?
+
+Answer:
+
+Use Select class and fetch all options.
+
+Iterate through them using loop and print values.
+
+Q11: What is WD/hub?
+
+Answer:
+
+It is a URL endpoint used to communicate with Appium or Selenium server.
+
+Q12: SQL question approach?
+
+Answer:
+
+We can use subquery and distinct methods to get required data.
+
+Q13: What questions do you ask interviewer?
+
+Answer:
+
+I want to know what the project is about, team size and what we are working on currently.
+
