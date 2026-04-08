@@ -1,0 +1,157 @@
+Q1: Explain your microservices testing experience.
+
+Answer:
+
+In the current project, I have been testing and validating the micro services, where we have different types of user services and notification, payment services, etc, where we would be checking in terms of individual independent modules as services and communicating via the API or the messaging systems within these user services.
+
+So I would be validating in isolation, as well as the integration for the overall end to end system testing, where in which we follow a layered approach, including the unit testing, API integration and end to end testing.
+
+I also ensure the data consistency across the flows and any like false positives or false negatives across.
+
+For the tools I am using karate, along with postman where I would be validating the request response with the status codes and schema validation, along with mandatory field validations and negative scenarios where I would check for 400 500 errors, and for integration testing, I would be doing the validation with respect to service to service communication, for checking the data flow and how the errors are getting handled, and we started with the contract testing as well, where in which we use pact as the tool so where we ensure APIs between the services do not break.
+
+Q2: How do you handle error handling and failover testing?
+
+Answer:
+
+Error handling is the first one, because it is automatically switching to the backup system right where we would be checking the primary system failures, and still, we want to keep the minimal disruption.
+
+So first we need to identify the APIs and the databases and message brokers.
+
+So we use Kafka for the same and then we define those.
+
+We check the critical services, like the payment service or the valid service, user profile service, and on the DB level, also we would be checking and we focus on testing the messages over the Kafka.
+
+Q3: How do you simulate failures?
+
+Answer:
+
+We use to simulate the failures and there we would be defining this network latency as well as database down, where we check for planned unplanned failure scenarios.
+
+Also for RTO and RPO, like, where we check for time objective and point objective, etc.
+
+So we simulate the services for these where in which I have used chaos so to simulate the failover which will intentionally break the system.
+
+In chaos itself, we have created.
+
+We are using chaos monkey.
+
+Q4: How do you perform security testing?
+
+Answer:
+
+We check with respect to authentication and authorization with the different roles and also data breaches with unauthorized access.
+
+So I check the input validation protection against the injection attacks and data exposure and replay attacks.
+
+So for these also, we would be doing SQL injection.
+
+Authorization I would be checking whether the user is able to access another user's data and admin versus normal user, so role based access between different roles and so user should not be able to access the resources which they are not able to authorize.
+
+And for authentication, I would be checking with valid, invalid tokens, expired tokens, or the expiry, etc.
+
+Q5: How do you combine UI and API testing?
+
+Answer:
+
+For UI, we are using hybrid implementation, combining both UI and API, where in which the configuration, setup, etc would be taken care through the API for reducing the execution time, and then we go through the UI validations.
+
+So the framework is a page object model based, data driven framework where in which we are differentiating the different modules.
+
+And I have worked on keyword driven modular frameworks as well, where we separate the page objects from the implementation methods.
+
+Q6: What is force click / force action?
+
+Answer:
+
+That is to perform action on the element, even if it is not in the interactable state.
+
+So it bypasses the real user conditions right as it performs the force action.
+
+So even if the element is hidden, overlapped, disabled, so we are asking it to perform the action so it can hide the actual user issues, like the UI issues, so if there are any conditions that the element should be enabled or displayed so it cannot be validated if you are using this approach.
+
+Q7: How do you handle synchronization issues?
+
+Answer:
+
+I would use an explicit wait to wait for the element.
+
+So we can write a conditional statement for the visibility of element located or element to be clickable, and we can specify the WebDriver wait with a duration and then perform the action once the element is visible.
+
+Q8: When do you choose Selenium vs Cypress?
+
+Answer:
+
+Whenever application focus is majorly on the UI implementation, where I need cross browser support, multi language flexibility, and to test the complex enterprise level applications, where we need to switch between windows tabs or use distributed systems integration testing, in that case I would go with Selenium, because all these capabilities are there in selenium over the Cypress.
+
+If we have different browsers to be validated, I would prefer Selenium.
+
+Then Cypress, because Cypress would interact directly on the web elements using the JavaScript invocation, so it doesn't need any driver in between, so it would be faster as per the performance.
+
+Q9: Why do flaky tests occur?
+
+Answer:
+
+Whenever the element is not stable, or if it is loading too fast or very slow, or due to dynamic changing elements or network related issues, test data specific issues and parallel executions and UI synchronization issues, in all these cases we might encounter flaky tests.
+
+Q10: Which tool would you prefer?
+
+Answer:
+
+That depends on the project scope, but with the recent trends I would prefer playwright, because playwright has advantages like inbuilt capabilities for waits, UI and API testing and even modified locator strategies.
+
+It is faster as well and we can use it for integrations also.
+
+Q11: How are you using AI tools?
+
+Answer:
+
+We are using copilot and licensed version of chat GPT also.
+
+I am using it for optimization of the framework and even for writing new scripts for the test coverage.
+
+Q12: What are challenges with AI-generated code?
+
+Answer:
+
+Locators cannot be exact, I need to tweak it because it gives generic locators.
+
+Our application needs stable locators so I use parameterized XPath or runtime values.
+
+Also environments are different so test data and behavior changes, so additional handling is needed.
+
+Q13: Explain CI/CD setup.
+
+Answer:
+
+We are using Jenkins, we can use Azure DevOps also.
+
+We integrate Git repository with Jenkins.
+
+We whitelist Jenkins servers with application URL.
+
+We write pipeline scripts using Gradle or Groovy.
+
+Then select environment and execute pipeline.
+
+Q14: How do you design a framework from scratch?
+
+Answer:
+
+First understand requirements like UI, API or microservices.
+
+Then identify tools and integrations.
+
+Use Page Object Model with layered structure.
+
+Organize project with pages, tests, utilities, configurations and data.
+
+Implement reusable utilities first and then build end to end flow.
+
+Q15: When do you reuse vs build from scratch?
+
+Answer:
+
+If reusability is 60 to 70 percent, reuse and modify existing framework.
+
+If reusability is less than 20 percent, build from scratch based on new architecture and requirements.
